@@ -1,22 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:module6/assaignment7/product/product.dart';
 
-import 'assaignment/assaignment.dart';
-import 'livequize/quize.dart';
+import 'package:module6/listbuildernavi/savescreen/nav1.dart';
+import 'package:module6/listbuildernavi/userscreen/userscreen.dart';
 
-void main() {
-  runApp(const MyApp());
+import 'assaignment7/cartpage/cartpage.dart';
+import 'assaignment7/productpage/productpage.dart';
+
+void main(){
+  runApp(MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-debugShowCheckedModeBanner: false,
-      home:Assaignment(),
+      debugShowCheckedModeBanner: false,
+      home: ProductScreen(products: productlist),
     );
   }
 }
-
